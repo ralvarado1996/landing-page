@@ -16,6 +16,8 @@ body {
   text-align: center;
 }
 
+/* HEADER */
+
 header {
   padding: 40px 20px 10px;
 }
@@ -25,6 +27,8 @@ header {
   clip-path: inset(0 10px 0 0);
   filter: drop-shadow(0 0 14px #00ffcc);
 }
+
+/* HERO */
 
 .hero h1 {
   font-family: 'Orbitron', sans-serif;
@@ -40,12 +44,35 @@ header {
   margin-bottom: 20px;
 }
 
+/* BUTTON */
+
+.button {
+  display: inline-block;
+  margin: 15px;
+  padding: 14px 28px;
+  background: linear-gradient(90deg, #00ffcc, #00cc99);
+  color: black;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button:hover {
+  opacity: 0.85;
+}
+
+/* SECTION TITLE */
+
 .section-title {
   margin-top: 60px;
   font-size: 22px;
   color: #00ffcc;
   font-family: 'Orbitron', sans-serif;
 }
+
+/* CARDS */
 
 .cards {
   display: flex;
@@ -77,16 +104,7 @@ header {
   color: #00ffcc;
 }
 
-.button {
-  display: inline-block;
-  margin: 15px;
-  padding: 14px 28px;
-  background: linear-gradient(90deg, #00ffcc, #00cc99);
-  color: black;
-  text-decoration: none;
-  border-radius: 8px;
-  font-weight: 600;
-}
+/* MODAL */
 
 .modal {
   display: none;
@@ -123,22 +141,32 @@ header {
   cursor: pointer;
   color: #bbb;
 }
-  
-  <section style="margin-top:60px; margin-bottom:20px;">
-  <div style="font-size:18px; color:#b5d6cc;">
-    For inquiries, institutional dialogue, or partnership opportunities:
-  </div>
-  <div style="margin-top:10px;">
-    <a href="mailto:contact@agrodignity.com" 
-       style="color:#00ffcc; text-decoration:none; font-weight:600;">
-       contact@agrodignity.com
-    </a>
-  </div>
-</section>
+
+.close:hover {
+  color: white;
+}
+
+/* CONTACT SECTION */
+
+.contact-line {
+  margin-top: 70px;
+  margin-bottom: 30px;
+  font-size: 17px;
+  color: #b5d6cc;
+}
+
+.contact-line a {
+  display: block;
+  margin-top: 8px;
+  color: #00ffcc;
+  text-decoration: none;
+  font-weight: 600;
+}
 
 footer {
   padding: 40px;
   color: #88b3a8;
+  border-top: 1px solid #1e3d34;
 }
 </style>
 </head>
@@ -194,6 +222,19 @@ footer {
     <p>Applied Digital Cooperatives</p>
   </div>
 </section>
+
+<!-- CONTACT LINE -->
+
+<section class="contact-line">
+  For inquiries, institutional dialogue, or partnership opportunities:
+  <a href="mailto:contact@agrodignity.com">
+    contact@agrodignity.com
+  </a>
+</section>
+
+<footer>
+AgroDignity — Compliance-Verified Origin. Shared Value at Source.
+</footer>
 
 <!-- MODALS -->
 
@@ -270,10 +311,6 @@ footer {
 <p>Compliance-Verified Origin embeds verification directly into the commodity lot. One product. One contract. One price.</p>
 </div>
 </div>
-
-<footer>
-AgroDignity — Compliance-Verified Origin. Shared Value at Source.
-</footer>
 
 <script>
 function openModal(id) {
