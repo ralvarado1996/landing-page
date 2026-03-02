@@ -1,67 +1,134 @@
-<header>
-  <img src="logo.png" alt="Logo" class="logo">
-</header>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>AgroDignity | Where Data Meets Dignity</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ADG - Data With Dignity</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
 <style>
 body {
-margin: 0;
-font-family: 'Segoe UI', sans-serif;
-background: linear-gradient(135deg, #0f172a, #1e293b);
-color: white;
-display: flex;
-justify-content: center;
-align-items: center;
-height: 100vh;
-text-align: center;
+  margin: 0;
+  background: #0a0a0a;
+  color: white;
+  font-family: 'Inter', sans-serif;
 }
-.box {
-max-width: 700px;
-padding: 40px;
+
+header {
+  text-align: center;
+  padding: 40px 20px 20px;
 }
-h1 {
-font-size: 52px;
-margin-bottom: 10px;
-letter-spacing: 2px;
+
+.logo {
+  width: 180px;
 }
-h2 {
-font-weight: 300;
-color: #38bdf8;
-margin-bottom: 30px;
+
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: auto;
 }
-p {
-line-height: 1.6;
-color: #cbd5e1;
+
+.hero h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 48px;
+  margin-bottom: 20px;
+  background: linear-gradient(90deg, #00ffcc, #00cc99);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-a {
-display: inline-block;
-margin-top: 30px;
-padding: 14px 30px;
-background: #22c55e;
-color: black;
-text-decoration: none;
-font-weight: bold;
-border-radius: 6px;
+
+.hero p {
+  font-size: 20px;
+  color: #bbb;
+  margin-bottom: 40px;
 }
-a:hover {
-background: #16a34a;
+
+.button {
+  background: linear-gradient(90deg, #00ffcc, #00cc99);
+  color: black;
+  padding: 15px 35px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.card {
+  background: #111;
+  padding: 30px;
+  border-radius: 12px;
+  width: 280px;
+  border: 1px solid #00ffcc20;
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  border-color: #00ffcc;
+}
+
+footer {
+  text-align: center;
+  padding: 40px;
+  color: #666;
+  font-size: 14px;
 }
 </style>
 </head>
+
 <body>
-<div class="box">
-<h1>AGRODIGNITY</h1>
-<h2>Where Data Meets Dignity</h2>
-<p>
-We build data infrastructure that embeds social inclusion directly into agricultural value chains. 
-Designing verification systems that transform traceability into measurable dignity.
-</p>
-<a href="mailto:contact@agrodignity.com">Contact Us</a>
-</div>
+
+<header>
+  <img src="logo.png" alt="ADG Logo" class="logo">
+</header>
+
+<section class="hero">
+  <h1>Data With Dignity</h1>
+  <p>We empower ethical, secure and intelligent data solutions for forward-thinking organizations.</p>
+  <a href="#" class="button">Contact Us</a>
+</section>
+
+<section class="section">
+  <h2>Our Services</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Data Strategy</h3>
+      <p>Building structured, scalable and compliant data ecosystems.</p>
+    </div>
+    <div class="card">
+      <h3>Analytics & Insights</h3>
+      <p>Transforming raw data into actionable intelligence.</p>
+    </div>
+    <div class="card">
+      <h3>Security & Governance</h3>
+      <p>Protecting sensitive information with ethical standards.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 ADG - Data With Dignity. All rights reserved.
+</footer>
+
 </body>
 </html>
