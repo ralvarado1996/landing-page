@@ -3,12 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AgroDignity | Where Data Meets Dignity</title>
+<title>AgroDignity | Compliance-Verified Origin</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
-
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
@@ -17,10 +16,8 @@ body {
   text-align: center;
 }
 
-/* HEADER */
-
 header {
-  padding: 40px 20px 20px;
+  padding: 40px 20px 10px;
 }
 
 .logo {
@@ -29,37 +26,41 @@ header {
   filter: drop-shadow(0 0 14px #00ffcc);
 }
 
-/* HERO */
-
 .hero h1 {
   font-family: 'Orbitron', sans-serif;
-  font-size: 42px;
+  font-size: 40px;
   background: linear-gradient(90deg, #00ffcc, #00cc99);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.hero p {
+.subtitle {
   color: #b5d6cc;
   font-size: 18px;
+  margin-bottom: 20px;
 }
 
-/* CARDS */
+.section-title {
+  margin-top: 60px;
+  font-size: 22px;
+  color: #00ffcc;
+  font-family: 'Orbitron', sans-serif;
+}
 
 .cards {
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 25px;
   flex-wrap: wrap;
-  margin: 60px 20px;
+  margin: 30px 20px;
 }
 
 .card {
   background: rgba(0,0,0,0.35);
   border: 1px solid #00ffcc30;
   border-radius: 16px;
-  padding: 40px;
-  width: 280px;
+  padding: 35px;
+  width: 260px;
   cursor: pointer;
   transition: 0.3s;
   backdrop-filter: blur(10px);
@@ -76,25 +77,16 @@ header {
   color: #00ffcc;
 }
 
-/* BUTTON */
-
 .button {
   display: inline-block;
-  margin-top: 20px;
-  padding: 14px 30px;
+  margin: 15px;
+  padding: 14px 28px;
   background: linear-gradient(90deg, #00ffcc, #00cc99);
   color: black;
-  border-radius: 8px;
   text-decoration: none;
+  border-radius: 8px;
   font-weight: 600;
-  transition: 0.3s;
 }
-
-.button:hover {
-  opacity: 0.85;
-}
-
-/* MODAL */
 
 .modal {
   display: none;
@@ -113,7 +105,7 @@ header {
   background: #112a22;
   padding: 40px;
   border-radius: 16px;
-  max-width: 750px;
+  max-width: 850px;
   width: 90%;
   text-align: left;
   border: 1px solid #00ffcc40;
@@ -132,15 +124,10 @@ header {
   color: #bbb;
 }
 
-.close:hover {
-  color: white;
-}
-
 footer {
   padding: 40px;
   color: #88b3a8;
 }
-
 </style>
 </head>
 
@@ -151,57 +138,129 @@ footer {
 </header>
 
 <section class="hero">
-  <h1>Where Data Meets Dignity</h1>
-  <p>Verifying once. Licensing across markets. Returning value to farmers.</p>
+  <h1>Compliance-Verified Origin</h1>
+  <div class="subtitle">
+    Digital Infrastructure for Shared Value<br>
+    Embedding compliance into commodities.<br>
+    Strengthening farmers at the source.
+  </div>
+
+  <button class="button" onclick="openModal('model')">Explore the Model</button>
+  <button class="button" onclick="openModal('partner')">Partner With Us</button>
 </section>
+
+<div class="section-title">The Framework</div>
 
 <section class="cards">
-  <div class="card" onclick="openModal('who')">
-    <h3>Who We Are</h3>
-    <p>Transforming agricultural data into dignified income.</p>
+  <div class="card" onclick="openModal('problem')">
+    <h3>The Problem</h3>
+    <p>Global compliance is rising. Value is not.</p>
   </div>
 
-  <div class="card" onclick="openModal('mission')">
-    <h3>Mission & Vision</h3>
-    <p>Formalizing digital assets for rural equity.</p>
+  <div class="card" onclick="openModal('solution')">
+    <h3>Our Solution</h3>
+    <p>Compliance-Verified Origin</p>
   </div>
 
-  <div class="card" onclick="openModal('project')">
-    <h3>The Project</h3>
-    <p>Compliance-as-a-Service with royalty distribution.</p>
+  <div class="card" onclick="openModal('how')">
+    <h3>How It Works</h3>
+    <p>Digital Cooperative Infrastructure</p>
+  </div>
+
+  <div class="card" onclick="openModal('buyers')">
+    <h3>For Brands & Importers</h3>
+    <p>Procurement-Ready Model</p>
+  </div>
+
+  <div class="card" onclick="openModal('governments')">
+    <h3>For Governments</h3>
+    <p>Institutional Infrastructure</p>
+  </div>
+
+  <div class="card" onclick="openModal('research')">
+    <h3>Research & Innovation</h3>
+    <p>Applied Digital Cooperatives</p>
   </div>
 </section>
-
-<a href="mailto:contact@agrodignity.com" class="button">Contact Us</a>
 
 <!-- MODALS -->
 
-<div id="who" class="modal">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal('who')">&times;</span>
-    <h2>Who We Are</h2>
-    <p>AgroDignity is a Honduran social enterprise transforming agricultural data into royalty-generating digital assets for smallholder farmers.</p>
-  </div>
+<div id="problem" class="modal">
+<div class="modal-content">
+<span class="close" onclick="closeModal('problem')">&times;</span>
+<h2>The Problem We Solve</h2>
+<p>Global compliance is rising. Value is not.</p>
+<p>Importers spend millions on traceability and due diligence infrastructure. Smallholder farmers — who generate the underlying data — receive none of that value.</p>
+<p>Compliance is now structural. The question is how it is designed.</p>
+</div>
 </div>
 
-<div id="mission" class="modal">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal('mission')">&times;</span>
-    <h2>Mission & Vision</h2>
-    <p>We formalize agricultural digital assets to close the rural income gap and strengthen digital sovereignty in global markets.</p>
-  </div>
+<div id="solution" class="modal">
+<div class="modal-content">
+<span class="close" onclick="closeModal('solution')">&times;</span>
+<h2>Compliance-Verified Origin</h2>
+<p>We integrate regulatory verification directly into agricultural commodities.</p>
+<p>Compliance becomes a feature of the product — not a separate cost center.</p>
+</div>
 </div>
 
-<div id="project" class="modal">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal('project')">&times;</span>
-    <h2>The Project</h2>
-    <p>We verify data under international standards, register Digital Asset Identifiers, license them across multiple markets, and distribute 90% of royalties directly to farmers.</p>
-  </div>
+<div id="how" class="modal">
+<div class="modal-content">
+<span class="close" onclick="closeModal('how')">&times;</span>
+<h2>How It Works</h2>
+<p><strong>1. Digital Cooperative Infrastructure</strong></p>
+<p>We structure and validate farm-level records aligned with EUDR and regulatory frameworks.</p>
+<p><strong>2. Embedded Premium Model</strong></p>
+<p>Compliance verification is incorporated into the per-kg price.</p>
+<p><strong>3. Shared Value at Source</strong></p>
+<p>A defined portion strengthens farmer income and cooperative capacity.</p>
+</div>
+</div>
+
+<div id="buyers" class="modal">
+<div class="modal-content">
+<span class="close" onclick="closeModal('buyers')">&times;</span>
+<h2>For Ethical Brands & Importers</h2>
+<p>Source audit-defensible origin. Reduce fragmented compliance workflows. Align traceability with farmer participation.</p>
+<p>This is not a certification scheme. It is supply chain architecture.</p>
+</div>
+</div>
+
+<div id="governments" class="modal">
+<div class="modal-content">
+<span class="close" onclick="closeModal('governments')">&times;</span>
+<h2>For Governments & Development Partners</h2>
+<p>Strengthening EUDR readiness. Modernizing cooperative governance. Building rural digital capacity.</p>
+</div>
+</div>
+
+<div id="research" class="modal">
+<div class="modal-content">
+<span class="close" onclick="closeModal('research')">&times;</span>
+<h2>Research & Innovation</h2>
+<p>We integrate academic research into cooperative data governance and compliance frameworks.</p>
+</div>
+</div>
+
+<div id="partner" class="modal">
+<div class="modal-content">
+<span class="close" onclick="closeModal('partner')">&times;</span>
+<h2>Partner With Us</h2>
+<p>We collaborate with ethical brands, cooperatives, governments, FAO, IFAD, and impact-aligned investors.</p>
+<a href="mailto:contact@agrodignity.com" class="button">Become a Partner</a>
+</div>
+</div>
+
+<div id="model" class="modal">
+<div class="modal-content">
+<span class="close" onclick="closeModal('model')">&times;</span>
+<h2>Explore the Model</h2>
+<p>Compliance-Verified Origin embeds verification directly into the commodity lot. One product. One contract. One price.</p>
+</div>
 </div>
 
 <footer>
-© 2026 AgroDignity. All rights reserved.
+AgroDignity — Compliance-Verified Origin. Shared Value at Source.
 </footer>
 
 <script>
