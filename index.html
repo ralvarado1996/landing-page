@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ADG - Data With Dignity</title>
+<title>AgroDignity | Where Data Meets Dignity</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
@@ -17,23 +17,29 @@ body {
 
 header {
   text-align: center;
-  padding: 40px 20px 20px;
+  padding: 40px 20px 10px;
 }
 
 .logo {
-  width: 380px;
+  width: 360px;
+  clip-path: inset(0 10px 0 0);
+  filter: drop-shadow(0 0 12px #00ffcc);
+}
+
+.section {
+  padding: 80px 20px;
+  max-width: 1000px;
+  margin: auto;
 }
 
 .hero {
   text-align: center;
-  padding: 60px 20px;
-  max-width: 900px;
-  margin: auto;
+  padding: 40px 20px 80px;
 }
 
 .hero h1 {
   font-family: 'Orbitron', sans-serif;
-  font-size: 48px;
+  font-size: 42px;
   margin-bottom: 20px;
   background: linear-gradient(90deg, #00ffcc, #00cc99);
   -webkit-background-clip: text;
@@ -44,6 +50,24 @@ header {
   font-size: 20px;
   color: #bbb;
   margin-bottom: 40px;
+}
+
+h2 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #00ffcc;
+}
+
+p {
+  line-height: 1.7;
+  color: #cbd5e1;
+  margin-bottom: 20px;
+}
+
+ul {
+  color: #cbd5e1;
+  line-height: 1.6;
 }
 
 .button {
@@ -57,34 +81,7 @@ header {
 }
 
 .button:hover {
-  opacity: 0.8;
-}
-
-.section {
-  padding: 80px 20px;
-  text-align: center;
-}
-
-.cards {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
-  margin-top: 40px;
-}
-
-.card {
-  background: #111;
-  padding: 30px;
-  border-radius: 12px;
-  width: 280px;
-  border: 1px solid #00ffcc20;
-  transition: 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-10px);
-  border-color: #00ffcc;
+  opacity: 0.85;
 }
 
 footer {
@@ -92,6 +89,7 @@ footer {
   padding: 40px;
   color: #666;
   font-size: 14px;
+  border-top: 1px solid #222;
 }
 </style>
 </head>
@@ -99,40 +97,87 @@ footer {
 <body>
 
 <header>
-  <img src="logo.png" alt="ADG Logo" class="logo">
+  <img src="logo.png" alt="AgroDignity Logo" class="logo">
 </header>
 
 <section class="hero">
-  <h1>Data With Dignity</h1>
-  <p>We empower ethical, secure and intelligent data solutions for forward-thinking organizations.</p>
+  <h1>Where Data Meets Dignity</h1>
+  <p>
+    Farmers generate data. Markets extract value. We return it.
+  </p>
 
-  <!-- BOTÓN SIMPLE Y SEGURO -->
   <a href="mailto:contact@agrodignity.com" class="button">
     Contact Us
   </a>
-
 </section>
 
 <section class="section">
-  <h2>Our Services</h2>
-  <div class="cards">
-    <div class="card">
-      <h3>Data Strategy</h3>
-      <p>Building structured, scalable and compliant data ecosystems.</p>
-    </div>
-    <div class="card">
-      <h3>Analytics & Insights</h3>
-      <p>Transforming raw data into actionable intelligence.</p>
-    </div>
-    <div class="card">
-      <h3>Security & Governance</h3>
-      <p>Protecting sensitive information with ethical standards.</p>
-    </div>
-  </div>
+  <h2>Who We Are</h2>
+  <p>
+    AgroDignity is a Honduran social enterprise transforming agricultural data into dignified income for smallholder farmers.
+    We believe farmers already generate valuable digital assets every day — yet they are rarely compensated for them.
+  </p>
+  <p>
+    Founded by professionals with experience in agribusiness, global food law, and international development institutions,
+    we design digital infrastructure that converts verified agricultural data into royalty-generating assets.
+  </p>
+</section>
+
+<section class="section">
+  <h2>Our Mission</h2>
+  <p>
+    To formalize and monetize agricultural digital assets in order to close the rural income gap.
+    We verify data once and license it across multiple markets — regulatory compliance, carbon, research,
+    artificial intelligence, and rural finance — ensuring every use generates royalties for farmers.
+  </p>
+</section>
+
+<section class="section">
+  <h2>Our Vision</h2>
+  <p>
+    A world where agricultural data is recognized as farmer-owned property,
+    where traceability generates income rather than compliance costs,
+    and where digital sovereignty strengthens rural economic independence.
+  </p>
+</section>
+
+<section class="section">
+  <h2>How the Project Works</h2>
+  <p><strong>1. Verification</strong><br>
+  Farmers submit GPS polygons, production records, and documentation.
+  We verify compliance under international standards such as EUDR and carbon protocols.</p>
+
+  <p><strong>2. Digital Asset Registration</strong><br>
+  Each verified dataset receives a Digital Asset Identifier (DAI) within a Cooperative Digital Registry.</p>
+
+  <p><strong>3. Multi-Market Licensing</strong><br>
+  Data is licensed across multiple markets:
+  </p>
+  <ul>
+    <li>European regulatory compliance</li>
+    <li>Carbon credit systems</li>
+    <li>Agricultural research institutions</li>
+    <li>AI training datasets</li>
+    <li>Rural insurance and finance</li>
+  </ul>
+
+  <p><strong>4. Royalty Distribution</strong><br>
+  90% of access fees are distributed directly to farmers as royalties.
+  10% supports a community Dignity Fund.
+  AgroDignity does not retain farmer royalties.</p>
+</section>
+
+<section class="section">
+  <h2>Impact</h2>
+  <p>
+    By activating existing digital records as income-generating assets,
+    AgroDignity creates new financial pathways without increasing farmer debt or dependency.
+    It is not subsidy — it is market correction.
+  </p>
 </section>
 
 <footer>
-  © 2026 ADG - Data With Dignity. All rights reserved.
+  © 2026 AgroDignity. All rights reserved.
 </footer>
 
 </body>
