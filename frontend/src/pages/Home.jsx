@@ -26,7 +26,7 @@ const Home = () => {
           <div className="flex items-center gap-5">
             <div className="p-4 bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg">
               <img 
-                src="https://customer-assets.emergentagent.com/job_honduras-agridata/artifacts/ehxq8wp7_WhatsApp%20Image%202026-03-04%20at%2010.11.28.jpeg" 
+                src="https://customer-assets.emergentagent.com/job_honduras-agridata/artifacts/u9a6ykvr_WhatsApp%20Image%202026-03-04%20at%2010.12.01.jpeg" 
                 alt="AgroDignity Logo" 
                 className="h-24 w-24 object-contain"
               />
@@ -322,7 +322,7 @@ const Home = () => {
             <div className="flex items-center gap-5 mb-6 md:mb-0">
               <div className="p-4 bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl shadow-xl">
                 <img 
-                  src="https://customer-assets.emergentagent.com/job_honduras-agridata/artifacts/ehxq8wp7_WhatsApp%20Image%202026-03-04%20at%2010.11.28.jpeg" 
+                  src="https://customer-assets.emergentagent.com/job_honduras-agridata/artifacts/u9a6ykvr_WhatsApp%20Image%202026-03-04%20at%2010.12.01.jpeg" 
                   alt="AgroDignity Logo" 
                   className="h-20 w-20 object-contain"
                 />
