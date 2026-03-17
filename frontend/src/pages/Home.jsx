@@ -233,7 +233,7 @@ const Home = () => {
                   <span className="text-4xl font-bold text-white">RA</span>
                 </div>
                 <h4 className="text-xl font-bold text-gray-900 mb-2">Rodrigo Alvarado</h4>
-                <p className="text-forest-green font-semibold mb-3">Co-founder & CTO</p>
+                <p className="text-forest-green font-semibold mb-3">Co-founder & COO</p>
                 <p className="text-gray-600 text-sm leading-relaxed">
                   Agribusiness & Data Science. FAO · IFAD · SAG Honduras. Italian-Honduran.
                 </p>
@@ -259,7 +259,7 @@ const Home = () => {
                   <span className="text-4xl font-bold text-white">AP</span>
                 </div>
                 <h4 className="text-xl font-bold text-gray-900 mb-2">Andrea Pavón</h4>
-                <p className="text-forest-green font-semibold mb-3">Co-founder & COO</p>
+                <p className="text-forest-green font-semibold mb-3">Co-founder & CTO</p>
                 <p className="text-gray-600 text-sm leading-relaxed">
                   Sustainable Food Systems · Circular Economy PhD, University of Trieste. Honduran.
                 </p>
