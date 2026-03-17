@@ -49,7 +49,7 @@ const Home = () => {
       </header>
 
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-32">
         <div 
           className="absolute inset-0 z-0"
           style={{
@@ -61,7 +61,7 @@ const Home = () => {
           <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/70 to-black/60"></div>
         </div>
         
-        <div className="container mx-auto px-6 py-32 relative z-10">
+        <div className="container mx-auto px-6 py-20 relative z-10">
           <div className="max-w-4xl">
             <h2 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight animate-fade-in">
               Honduras tiene USD 2.030 millones en exportaciones de café y cacao. 
