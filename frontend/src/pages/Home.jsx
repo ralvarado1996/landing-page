@@ -21,17 +21,19 @@ const Home = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
-      <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-white shadow-md py-3' : 'bg-transparent py-5'}`}>
+      <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-white shadow-md py-3' : 'bg-white/95 backdrop-blur-sm py-3'}`}>
         <div className="container mx-auto px-6 flex justify-between items-center">
-          <div className="flex items-center gap-3">
-            <img 
-              src="https://customer-assets.emergentagent.com/job_honduras-agridata/artifacts/wz0k2z0q_WhatsApp%20Image%202026-03-04%20at%2010.12.01.jpeg" 
-              alt="AgroDignity Logo" 
-              className="h-12 w-12 object-contain"
-            />
+          <div className="flex items-center gap-4">
+            <div className="p-2 bg-white rounded-2xl shadow-sm">
+              <img 
+                src="https://customer-assets.emergentagent.com/job_honduras-agridata/artifacts/ehxq8wp7_WhatsApp%20Image%202026-03-04%20at%2010.11.28.jpeg" 
+                alt="AgroDignity Logo" 
+                className="h-16 w-16 object-contain"
+              />
+            </div>
             <div>
-              <h1 className="text-xl font-bold text-forest-green">AgroDignity</h1>
-              <p className="text-xs text-gray-600">Datos con Dignidad</p>
+              <h1 className="text-2xl font-bold text-forest-green">AgroDignity</h1>
+              <p className="text-sm text-gray-600">Datos con Dignidad</p>
             </div>
           </div>
           <nav className="hidden md:flex gap-8">
@@ -317,15 +319,17 @@ const Home = () => {
       <footer className="bg-gray-900 text-gray-400 py-12">
         <div className="container mx-auto px-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="flex items-center gap-3 mb-6 md:mb-0">
-              <img 
-                src="https://customer-assets.emergentagent.com/job_honduras-agridata/artifacts/wz0k2z0q_WhatsApp%20Image%202026-03-04%20at%2010.12.01.jpeg" 
-                alt="AgroDignity Logo" 
-                className="h-10 w-10 object-contain"
-              />
+            <div className="flex items-center gap-4 mb-6 md:mb-0">
+              <div className="p-2 bg-gray-800 rounded-2xl">
+                <img 
+                  src="https://customer-assets.emergentagent.com/job_honduras-agridata/artifacts/ehxq8wp7_WhatsApp%20Image%202026-03-04%20at%2010.11.28.jpeg" 
+                  alt="AgroDignity Logo" 
+                  className="h-14 w-14 object-contain"
+                />
+              </div>
               <div>
-                <h4 className="text-white font-bold">AgroDignity</h4>
-                <p className="text-xs">Datos con Dignidad</p>
+                <h4 className="text-white font-bold text-lg">AgroDignity</h4>
+                <p className="text-sm">Datos con Dignidad</p>
               </div>
             </div>
             <p className="text-sm">
